@@ -9,6 +9,9 @@ public class Paradas {
         this.idParada = idParada;
     }
 
+    public Paradas() {
+    }
+
     public int getIdParada() {
         return idParada;
     }

@@ -2,7 +2,7 @@ package Model;
 
 public class Onibus {
 
-    private int idOnibus, capMax, prioridade;
+    private int idOnibus, capacidadeMax, prioridade;
     private String tipo; //Tipo do onibus
     private String stituacao = "V"; // C = cheio | V = vazio
 
@@ -13,12 +13,12 @@ public class Onibus {
     public Onibus() {
     }
 
-    public int getCapMax() {
-        return capMax;
+    public int getCapacidadeMax() {
+        return capacidadeMax;
     }
 
-    public void setCapMax(int capMax) {
-        this.capMax = capMax;
+    public void setCapacidadeMax(int capacidadeMax) {
+        this.capacidadeMax = capacidadeMax;
     }
 
     public int getIdOnibus() {
