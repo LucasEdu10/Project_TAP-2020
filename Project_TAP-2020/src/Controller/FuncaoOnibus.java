@@ -21,7 +21,7 @@ public class FuncaoOnibus {
 
     @Override
     public String toString() {
-        return "Parada=" + p.getIdParada() + " Situação=" + p.getSituacao();
+        return "Parada=" + o.getIdOnibus()+ " Situação=" + o.getStituacao();
     }
 
     public synchronized void roda(){
