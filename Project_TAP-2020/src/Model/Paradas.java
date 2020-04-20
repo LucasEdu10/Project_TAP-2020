@@ -2,7 +2,7 @@ package Model;
 
 public class Paradas {
 
-    private int idParada;
+    private int idParada, total = 0;
     private String situacao = "L"; //L = Livre | O = ocupado
 
     public Paradas(int idParada) {
@@ -27,5 +27,13 @@ public class Paradas {
     public void setSituacao(String situacao) {
         this.situacao = situacao;
     }
+
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
 
 }

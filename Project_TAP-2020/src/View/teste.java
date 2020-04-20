@@ -1,23 +1,22 @@
 package View;
 
-import Controller.FuncaoParada;
-import Controller.Roda;
+import Controller.ComecaPartidas;
+import Controller.Funcoes;
+import Model.Onibus;
 import Model.Paradas;
 
 public class teste {
 
     public static void main(String[] args) {
-        /*Paradas b = new Paradas();
-        FuncaoParada a = new FuncaoParada();
-        FuncaoParada a2 = new FuncaoParada();
-        a.addParadas(10, "L");
-        a2.addParadas(14, "O");
         
-        System.out.println(a.toString());
-        System.out.println(a2.toString());*/
-        
-        Roda a = new Roda();
-        
+    	Funcoes func = new Funcoes();
+		Onibus b1 = new Onibus();
+		Paradas parada = new Paradas();
+		
+		func.addParada(Onibus.parada1);
+		//func.addParada(Onibus.parada2);
+		
+		ComecaPartidas go = new ComecaPartidas(b1);
         
         
     }
