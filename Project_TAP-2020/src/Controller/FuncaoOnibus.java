@@ -14,14 +14,13 @@ public class FuncaoOnibus {
 
     public void addParadas(int t, String s) {
         o.setIdOnibus(t);
-        o.setStituacao(s);
 
         parada.add(o);
     }
 
     @Override
     public String toString() {
-        return "Parada=" + o.getIdOnibus()+ " Situação=" + o.getStituacao();
+        return "Parada=" + o.getIdOnibus()+ " Situação=";
     }
 
     public synchronized void roda(){
