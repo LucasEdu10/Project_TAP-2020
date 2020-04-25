@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 import Model.Onibus;
 import Model.Paradas;
+import java.awt.Color;
 
 public class SincMetodos {
 
-    Onibus oni = new Onibus();
     Paradas para = new Paradas();
-
+    
+    private Color cor = null;
     public static boolean PAUSAR = false;    
     public static int QTD_NUCLEOS = 0;
     public static Paradas[] listaParadas = null;
@@ -36,8 +37,8 @@ public class SincMetodos {
         parada.getProgressbar().setMinimum(0);
         parada.getProgressbar().setValue(0);
         parada.getProgressbar().setString("Progress Disponível 0%");
-        /*parada.getProgressbar().setForeground(new Color(0,120,215));
-        parada.getProgressbar().setBackground(new Color(240,240,240));*/
+        //parada.getProgressbar().setForeground(new Color(0,120,215));
+        //parada.getProgressbar().setBackground(new Color(240,240,240));
         parada.setSituacao("L");
     }  
     

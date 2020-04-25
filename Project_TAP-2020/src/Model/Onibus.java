@@ -5,21 +5,26 @@ import java.util.Random;
 
 public class Onibus {
 
-    private int idOnibus, capMax, prioridade;
+    private int idOnibus, prioridade;
     private Color corBackground = null;
     private Color corForeground = null;
-    private Color cor = null;
+    private Color cor;
 
     Random gera = new Random();
 
     public Onibus(int idOnibus) {
         this.idOnibus = idOnibus;
         gerarCores();
+    }    
+    
+    public void setCor(Color cor) {
+        this.cor = cor;
     }
 
-    public Onibus() {
+    public Color getCor() {
+        return cor;
     }
-
+    
     public Color getCorBackground() {
         return corBackground;
     }
@@ -43,18 +48,8 @@ public class Onibus {
     public void setIdOnibus(int idOnibus) {
         this.idOnibus = idOnibus;
     }
-
-    public int getCapMax() {
-        return capMax;
-    }
-
-    public void setCapMax(int capMax) {
-        this.capMax = capMax;
-    }
-
+   
     private void gerarCores() {
-        //int IntPriorid = gera.nextInt(3);
-
         if (idOnibus == 1) {
             this.cor = new Color(255, 0, 0);
             this.corBackground = new Color(255, 255, 255); //Fonte Branca
@@ -66,12 +61,12 @@ public class Onibus {
             this.corForeground = new Color(255, 0, 204); //153,102,0); //Barra Marrom
             
         } else if (idOnibus == 3) {
-            this.cor = new Color(0, 0, 255);
+            this.cor = new Color(51,255,0);
             this.corBackground = new Color(255, 255, 255); //Fonte Branca
             this.corForeground = new Color(51,255,0); //51,255,0); //Barra Azul
             
         } else if (idOnibus == 4) {
-            this.cor = new Color(0, 0, 255);
+            this.cor = new Color(28,28,28);
             this.corBackground = new Color(255, 255, 255); //Fonte Branca
             this.corForeground = new Color(28,28,28); //51,255,0); //Barra preto
             

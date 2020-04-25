@@ -29,35 +29,35 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jProgressBar2 = new javax.swing.JProgressBar();
         jProgressBar3 = new javax.swing.JProgressBar();
         jProgressBar4 = new javax.swing.JProgressBar();
-        jProgressBar90 = new javax.swing.JProgressBar();
+        jProgressBar33 = new javax.swing.JProgressBar();
         jProgressBar5 = new javax.swing.JProgressBar();
         jProgressBar13 = new javax.swing.JProgressBar();
         jProgressBar9 = new javax.swing.JProgressBar();
-        jProgressBar19 = new javax.swing.JProgressBar();
-        jProgressBar20 = new javax.swing.JProgressBar();
+        jProgressBar17 = new javax.swing.JProgressBar();
         jProgressBar21 = new javax.swing.JProgressBar();
-        jProgressBar22 = new javax.swing.JProgressBar();
-        jProgressBar23 = new javax.swing.JProgressBar();
-        jProgressBar24 = new javax.swing.JProgressBar();
         jProgressBar25 = new javax.swing.JProgressBar();
+        jProgressBar29 = new javax.swing.JProgressBar();
+        jProgressBar34 = new javax.swing.JProgressBar();
+        jProgressBar30 = new javax.swing.JProgressBar();
         jProgressBar26 = new javax.swing.JProgressBar();
-        jProgressBar27 = new javax.swing.JProgressBar();
+        jProgressBar22 = new javax.swing.JProgressBar();
+        jProgressBar18 = new javax.swing.JProgressBar();
         jProgressBar14 = new javax.swing.JProgressBar();
         jProgressBar10 = new javax.swing.JProgressBar();
         jProgressBar6 = new javax.swing.JProgressBar();
-        jProgressBar32 = new javax.swing.JProgressBar();
-        jProgressBar33 = new javax.swing.JProgressBar();
-        jProgressBar34 = new javax.swing.JProgressBar();
         jProgressBar35 = new javax.swing.JProgressBar();
-        jProgressBar36 = new javax.swing.JProgressBar();
+        jProgressBar31 = new javax.swing.JProgressBar();
+        jProgressBar27 = new javax.swing.JProgressBar();
+        jProgressBar23 = new javax.swing.JProgressBar();
+        jProgressBar19 = new javax.swing.JProgressBar();
         jProgressBar15 = new javax.swing.JProgressBar();
         jProgressBar11 = new javax.swing.JProgressBar();
         jProgressBar7 = new javax.swing.JProgressBar();
-        jProgressBar41 = new javax.swing.JProgressBar();
-        jProgressBar42 = new javax.swing.JProgressBar();
-        jProgressBar43 = new javax.swing.JProgressBar();
-        jProgressBar44 = new javax.swing.JProgressBar();
-        jProgressBar45 = new javax.swing.JProgressBar();
+        jProgressBar36 = new javax.swing.JProgressBar();
+        jProgressBar32 = new javax.swing.JProgressBar();
+        jProgressBar28 = new javax.swing.JProgressBar();
+        jProgressBar24 = new javax.swing.JProgressBar();
+        jProgressBar20 = new javax.swing.JProgressBar();
         jProgressBar16 = new javax.swing.JProgressBar();
         jProgressBar12 = new javax.swing.JProgressBar();
         jProgressBar8 = new javax.swing.JProgressBar();
@@ -90,8 +90,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jProgressBar4.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar4.setStringPainted(true);
 
-        jProgressBar90.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar90.setStringPainted(true);
+        jProgressBar33.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar33.setStringPainted(true);
 
         jProgressBar5.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar5.setStringPainted(true);
@@ -102,32 +102,32 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jProgressBar9.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar9.setStringPainted(true);
 
-        jProgressBar19.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar19.setStringPainted(true);
-
-        jProgressBar20.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar20.setStringPainted(true);
+        jProgressBar17.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar17.setStringPainted(true);
 
         jProgressBar21.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar21.setStringPainted(true);
 
-        jProgressBar22.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar22.setStringPainted(true);
-
-        jProgressBar23.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar23.setStringPainted(true);
-
-        jProgressBar24.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar24.setStringPainted(true);
-
         jProgressBar25.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar25.setStringPainted(true);
+
+        jProgressBar29.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar29.setStringPainted(true);
+
+        jProgressBar34.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar34.setStringPainted(true);
+
+        jProgressBar30.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar30.setStringPainted(true);
 
         jProgressBar26.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar26.setStringPainted(true);
 
-        jProgressBar27.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar27.setStringPainted(true);
+        jProgressBar22.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar22.setStringPainted(true);
+
+        jProgressBar18.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar18.setStringPainted(true);
 
         jProgressBar14.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar14.setStringPainted(true);
@@ -138,20 +138,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jProgressBar6.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar6.setStringPainted(true);
 
-        jProgressBar32.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar32.setStringPainted(true);
-
-        jProgressBar33.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar33.setStringPainted(true);
-
-        jProgressBar34.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar34.setStringPainted(true);
-
         jProgressBar35.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar35.setStringPainted(true);
 
-        jProgressBar36.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar36.setStringPainted(true);
+        jProgressBar31.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar31.setStringPainted(true);
+
+        jProgressBar27.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar27.setStringPainted(true);
+
+        jProgressBar23.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar23.setStringPainted(true);
+
+        jProgressBar19.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar19.setStringPainted(true);
 
         jProgressBar15.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar15.setStringPainted(true);
@@ -162,20 +162,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jProgressBar7.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar7.setStringPainted(true);
 
-        jProgressBar41.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar41.setStringPainted(true);
+        jProgressBar36.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar36.setStringPainted(true);
 
-        jProgressBar42.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar42.setStringPainted(true);
+        jProgressBar32.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar32.setStringPainted(true);
 
-        jProgressBar43.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar43.setStringPainted(true);
+        jProgressBar28.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar28.setStringPainted(true);
 
-        jProgressBar44.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar44.setStringPainted(true);
+        jProgressBar24.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar24.setStringPainted(true);
 
-        jProgressBar45.setPreferredSize(new java.awt.Dimension(146, 35));
-        jProgressBar45.setStringPainted(true);
+        jProgressBar20.setPreferredSize(new java.awt.Dimension(146, 35));
+        jProgressBar20.setStringPainted(true);
 
         jProgressBar16.setPreferredSize(new java.awt.Dimension(146, 35));
         jProgressBar16.setStringPainted(true);
@@ -201,44 +201,44 @@ public class TelaPrincipal extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar90, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar19, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar22, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar33, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar17, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar29, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar25, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar21, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar20, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar13, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar9, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(44, 44, 44)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar23, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar27, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar24, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar25, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar34, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar18, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar30, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar26, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar22, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar14, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar10, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar6, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(37, 37, 37)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jProgressBar3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar32, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar36, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar33, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar34, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar35, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar19, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar31, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar27, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar23, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar15, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar11, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(44, 44, 44)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jProgressBar4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar41, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar45, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar42, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar43, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jProgressBar44, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar36, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar20, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar32, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar28, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar24, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar16, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar12, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jProgressBar8, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -260,15 +260,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
                                 .addGap(31, 31, 31)
                                 .addComponent(jProgressBar13, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jProgressBar19, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jProgressBar17, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(31, 31, 31)
-                                .addComponent(jProgressBar20, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(35, 35, 35)
                                 .addComponent(jProgressBar21, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(35, 35, 35)
+                                .addComponent(jProgressBar25, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(31, 31, 31)
-                                .addComponent(jProgressBar22, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jProgressBar29, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jProgressBar90, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jProgressBar33, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(31, 31, 31)
@@ -278,15 +278,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
                                 .addGap(31, 31, 31)
                                 .addComponent(jProgressBar14, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jProgressBar27, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jProgressBar18, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(31, 31, 31)
-                                .addComponent(jProgressBar26, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jProgressBar22, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(35, 35, 35)
-                                .addComponent(jProgressBar25, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jProgressBar26, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(31, 31, 31)
-                                .addComponent(jProgressBar24, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jProgressBar30, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jProgressBar23, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jProgressBar34, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(layout.createSequentialGroup()
                             .addComponent(jProgressBar3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(31, 31, 31)
@@ -296,15 +296,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
                             .addGap(31, 31, 31)
                             .addComponent(jProgressBar15, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
-                            .addComponent(jProgressBar36, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar19, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(31, 31, 31)
-                            .addComponent(jProgressBar35, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar23, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(35, 35, 35)
-                            .addComponent(jProgressBar34, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar27, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(31, 31, 31)
-                            .addComponent(jProgressBar33, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jProgressBar31, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
-                            .addComponent(jProgressBar32, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jProgressBar35, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jProgressBar4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(31, 31, 31)
@@ -314,15 +314,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
                         .addGap(31, 31, 31)
                         .addComponent(jProgressBar16, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jProgressBar45, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jProgressBar20, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(31, 31, 31)
-                        .addComponent(jProgressBar44, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jProgressBar24, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(35, 35, 35)
-                        .addComponent(jProgressBar43, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jProgressBar28, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(31, 31, 31)
-                        .addComponent(jProgressBar42, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jProgressBar32, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jProgressBar41, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jProgressBar36, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 186, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnComeçar)
@@ -333,28 +333,52 @@ public class TelaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void carregaListaParadas(){
-         if (SincMetodos.listaParadas  == null){
-            SincMetodos.listaParadas = new Paradas[12];
-            SincMetodos.listaParadas[0]  = new Paradas(1,jProgressBar1);
-            SincMetodos.listaParadas[1]  = new Paradas(2,jProgressBar2);
-            SincMetodos.listaParadas[2]  = new Paradas(3,jProgressBar3);
-            SincMetodos.listaParadas[3]  = new Paradas(4,jProgressBar4);
-            SincMetodos.listaParadas[4]  = new Paradas(5,jProgressBar5);
-            SincMetodos.listaParadas[5]  = new Paradas(6,jProgressBar6);
-            SincMetodos.listaParadas[6]  = new Paradas(7,jProgressBar7);
-            SincMetodos.listaParadas[7]  = new Paradas(8,jProgressBar8);
-            SincMetodos.listaParadas[8]  = new Paradas(9,jProgressBar9);
-            SincMetodos.listaParadas[9]  = new Paradas(10,jProgressBar10);
-            SincMetodos.listaParadas[10] = new Paradas(11,jProgressBar11);
-            SincMetodos.listaParadas[11] = new Paradas(12,jProgressBar12);
-        } 
+    public void carregaListaParadas() {
+        if (SincMetodos.listaParadas == null) {
+            SincMetodos.listaParadas = new Paradas[36];
+            SincMetodos.listaParadas[0] = new Paradas(1, jProgressBar1);
+            SincMetodos.listaParadas[1] = new Paradas(2, jProgressBar2);
+            SincMetodos.listaParadas[2] = new Paradas(3, jProgressBar3);
+            SincMetodos.listaParadas[3] = new Paradas(4, jProgressBar4);
+            SincMetodos.listaParadas[4] = new Paradas(5, jProgressBar5);
+            SincMetodos.listaParadas[5] = new Paradas(6, jProgressBar6);
+            SincMetodos.listaParadas[6] = new Paradas(7, jProgressBar7);
+            SincMetodos.listaParadas[7] = new Paradas(8, jProgressBar8);
+            SincMetodos.listaParadas[8] = new Paradas(9, jProgressBar9);
+            SincMetodos.listaParadas[9] = new Paradas(10, jProgressBar10);
+            SincMetodos.listaParadas[10] = new Paradas(11, jProgressBar11);
+            SincMetodos.listaParadas[11] = new Paradas(12, jProgressBar12);
+            SincMetodos.listaParadas[12] = new Paradas(13, jProgressBar13);
+            SincMetodos.listaParadas[13] = new Paradas(14, jProgressBar14);
+            SincMetodos.listaParadas[14] = new Paradas(15, jProgressBar15);
+            SincMetodos.listaParadas[15] = new Paradas(16, jProgressBar16);
+            SincMetodos.listaParadas[16] = new Paradas(17, jProgressBar17);
+            SincMetodos.listaParadas[17] = new Paradas(18, jProgressBar18);
+            SincMetodos.listaParadas[18] = new Paradas(19, jProgressBar19);
+            SincMetodos.listaParadas[19] = new Paradas(20, jProgressBar20);
+            SincMetodos.listaParadas[20] = new Paradas(21, jProgressBar21);
+            SincMetodos.listaParadas[21] = new Paradas(22, jProgressBar22);
+            SincMetodos.listaParadas[22] = new Paradas(23, jProgressBar23);
+            SincMetodos.listaParadas[23] = new Paradas(24, jProgressBar24);
+            SincMetodos.listaParadas[24] = new Paradas(25, jProgressBar25);
+            SincMetodos.listaParadas[25] = new Paradas(26, jProgressBar26);
+            SincMetodos.listaParadas[26] = new Paradas(27, jProgressBar27);
+            SincMetodos.listaParadas[27] = new Paradas(28, jProgressBar28);
+            SincMetodos.listaParadas[28] = new Paradas(29, jProgressBar29);
+            SincMetodos.listaParadas[29] = new Paradas(30, jProgressBar30);
+            SincMetodos.listaParadas[30] = new Paradas(31, jProgressBar31);
+            SincMetodos.listaParadas[31] = new Paradas(32, jProgressBar32);
+            SincMetodos.listaParadas[32] = new Paradas(33, jProgressBar33);
+            SincMetodos.listaParadas[33] = new Paradas(34, jProgressBar34);
+            SincMetodos.listaParadas[34] = new Paradas(35, jProgressBar35);
+            SincMetodos.listaParadas[35] = new Paradas(36, jProgressBar36);
+        }
     }
-    
-    
+
+
     private void BtnComeçarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnComeçarActionPerformed
-        SincMetodos.QTD_NUCLEOS = 8; // Runtime.getRuntime().availableProcessors();
-        
+        SincMetodos.QTD_NUCLEOS = 2; // Runtime.getRuntime().availableProcessors();
+
         carregaListaParadas();
         SincMetodos.criaThreadOnibus();
     }//GEN-LAST:event_BtnComeçarActionPerformed
@@ -374,7 +398,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Winodos".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -409,6 +433,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JProgressBar jProgressBar14;
     private javax.swing.JProgressBar jProgressBar15;
     private javax.swing.JProgressBar jProgressBar16;
+    private javax.swing.JProgressBar jProgressBar17;
+    private javax.swing.JProgressBar jProgressBar18;
     private javax.swing.JProgressBar jProgressBar19;
     private javax.swing.JProgressBar jProgressBar2;
     private javax.swing.JProgressBar jProgressBar20;
@@ -419,23 +445,21 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JProgressBar jProgressBar25;
     private javax.swing.JProgressBar jProgressBar26;
     private javax.swing.JProgressBar jProgressBar27;
+    private javax.swing.JProgressBar jProgressBar28;
+    private javax.swing.JProgressBar jProgressBar29;
     private javax.swing.JProgressBar jProgressBar3;
+    private javax.swing.JProgressBar jProgressBar30;
+    private javax.swing.JProgressBar jProgressBar31;
     private javax.swing.JProgressBar jProgressBar32;
     private javax.swing.JProgressBar jProgressBar33;
     private javax.swing.JProgressBar jProgressBar34;
     private javax.swing.JProgressBar jProgressBar35;
     private javax.swing.JProgressBar jProgressBar36;
     private javax.swing.JProgressBar jProgressBar4;
-    private javax.swing.JProgressBar jProgressBar41;
-    private javax.swing.JProgressBar jProgressBar42;
-    private javax.swing.JProgressBar jProgressBar43;
-    private javax.swing.JProgressBar jProgressBar44;
-    private javax.swing.JProgressBar jProgressBar45;
     private javax.swing.JProgressBar jProgressBar5;
     private javax.swing.JProgressBar jProgressBar6;
     private javax.swing.JProgressBar jProgressBar7;
     private javax.swing.JProgressBar jProgressBar8;
     private javax.swing.JProgressBar jProgressBar9;
-    private javax.swing.JProgressBar jProgressBar90;
     // End of variables declaration//GEN-END:variables
 }
