@@ -1,75 +1,121 @@
 package Model;
 
+import java.awt.Color;
 import java.util.Random;
 
 public class Onibus {
 
-	private int idOnibus, capMax, prioridade;
-	private String tipo;
-	Random gera = new Random();
-	Paradas parada;
-	
-	public static Paradas parada1 = new Paradas(0);  //tive que instanciar para começar com pelo menos uma parada
-	//public static Paradas parada2 = new Paradas(1);
-        
-        public Onibus(String tipo,int idOnibus) {
-            this.idOnibus = idOnibus;
-            this.tipo = tipo;
-	}
-	
-	public Onibus() {}
-        
-	public int getPrioridade() {
-		return prioridade;
-	}
-	public void setPrioridade(int prioridade) {
-		this.prioridade = prioridade;
-	}
-	
-	public int getIdOnibus() {
-		return idOnibus;
-	}
+    private int idOnibus, capMax, prioridade;
+    private Color corBackground = null;
+    private Color corForeground = null;
+    private Color cor = null;
 
-	public void setIdOnibus(int idOnibus) {
-		this.idOnibus = idOnibus;
-	}
+    Random gera = new Random();
 
-	public int getCapMax() {
-		return capMax;
-	}
-
-	public void setCapMax(int capMax) {
-		this.capMax = capMax;
-	}
-	public String getTipo() {
-		return tipo;
-	}
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-	
-		
-        public int geraPrioridAleatorio(){ 
-            int IntPriorid = gera.nextInt(3);
-
-            if(IntPriorid == 1) {
-                    this.idOnibus = 1;
-                    this.prioridade = 1;
-                this.tipo = "Pequeno";
-                return 1;
-            }else {
-                if(IntPriorid == 2) {
-                        this.idOnibus = 2;
-                        this.prioridade = 2;
-                this.tipo = "Medio";
-                return 2;
-                }else {
-                        this.idOnibus = 3;
-                        this.prioridade = 3;
-                this.tipo = "Grande";
-                return 3;
-                }
-        }
+    public Onibus(int idOnibus) {
+        this.idOnibus = idOnibus;
+        gerarCores();
     }
 
+    public Onibus() {
+    }
+
+    public Color getCorBackground() {
+        return corBackground;
+    }
+
+    public void setCorBackground(Color corBackground) {
+        this.corBackground = corBackground;
+    }
+
+    public Color getCorForeground() {
+        return corForeground;
+    }
+
+    public void setCorForeground(Color corForeground) {
+        this.corForeground = corForeground;
+    }
+
+    public int getIdOnibus() {
+        return idOnibus;
+    }
+
+    public void setIdOnibus(int idOnibus) {
+        this.idOnibus = idOnibus;
+    }
+
+    public int getCapMax() {
+        return capMax;
+    }
+
+    public void setCapMax(int capMax) {
+        this.capMax = capMax;
+    }
+
+    private void gerarCores() {
+        //int IntPriorid = gera.nextInt(3);
+
+        if (idOnibus == 1) {
+            this.cor = new Color(255, 0, 0);
+            this.corBackground = new Color(255, 255, 255); //Fonte Branca
+            this.corForeground = new Color(255, 0, 0); //255,0,0);//Barra Vermelho
+           
+        } else if (idOnibus == 2) {
+            this.cor = new Color(255, 0, 204);
+            this.corBackground = new Color(255, 255, 255);//Fonte Branca
+            this.corForeground = new Color(255, 0, 204); //153,102,0); //Barra Marrom
+            
+        } else if (idOnibus == 3) {
+            this.cor = new Color(0, 0, 255);
+            this.corBackground = new Color(255, 255, 255); //Fonte Branca
+            this.corForeground = new Color(51,255,0); //51,255,0); //Barra Azul
+            
+        } else if (idOnibus == 4) {
+            this.cor = new Color(0, 0, 255);
+            this.corBackground = new Color(255, 255, 255); //Fonte Branca
+            this.corForeground = new Color(28,28,28); //51,255,0); //Barra preto
+            
+        } else if (idOnibus == 5) {
+            this.cor = new Color(0, 0, 255);
+            this.corBackground = new Color(255, 255, 255); //Fonte Branca
+            this.corForeground = new Color(131,111,255); //51,255,0); //Barra Azul
+            
+        } else if (idOnibus == 6) {
+            this.cor = new Color(0, 0, 255);
+            this.corBackground = new Color(255, 255, 255); //Fonte Branca
+            this.corForeground = new Color(0,0,205); //51,255,0); //Barra Azul
+            
+        } else if (idOnibus == 7) {
+            this.cor = new Color(0, 0, 255);
+            this.corBackground = new Color(255, 255, 255); //Fonte Branca
+            this.corForeground = new Color(0,191,255); //51,255,0); //Barra Azul
+            
+        } else if (idOnibus == 8) {
+            this.cor = new Color(0, 0, 255);
+            this.corBackground = new Color(255, 255, 255); //Fonte Branca
+            this.corForeground = new Color(112,128,144); //51,255,0); //Barra Azul
+            
+        } else if (idOnibus == 9) {
+            this.cor = new Color(0, 0, 255);
+            this.corBackground = new Color(255, 255, 255); //Fonte Branca
+            this.corForeground = new Color(0,206,209); //51,255,0); //Barra Azul
+            
+        } else if (idOnibus == 10) {
+            this.cor = new Color(0, 0, 255);
+            this.corBackground = new Color(255, 255, 255); //Fonte Branca
+            this.corForeground = new Color(0,139,139); //51,255,0); //Barra Azul
+            
+        } else if (idOnibus == 11) {
+            this.cor = new Color(0, 0, 255);
+            this.corBackground = new Color(255, 255, 255); //Fonte Branca
+            this.corForeground = new Color(0,250,154); //51,255,0); //Barra Azul
+            
+        } else if (idOnibus == 12) {
+            this.cor = new Color(0, 0, 255);
+            this.corBackground = new Color(255, 255, 255); //Fonte Branca
+            this.corForeground = new Color(124,252,0); //51,255,0); //Barra Azul
+            
+        }
+
+    }
 }

@@ -1,26 +1,18 @@
 package Controller;
 
+import Model.Onibus;
 import Model.Paradas;
 import java.util.ArrayList;
 
-public class FuncaoParada {
+public class FuncaoParada implements Runnable{
 
-    ArrayList<Paradas> parada = new ArrayList<Paradas>();
-    Paradas p = new Paradas();
-
-    public FuncaoParada() {
-    }
-
-    public void addParadas(int t, String s) {
-        p.setIdParada(t);
-        p.setSituacao(s);
-
-        parada.add(p);
-    }
-
+    private Onibus progresso;
+    
     @Override
-    public String toString() {
-        return "Parada=" + p.getIdParada() + " Situação=" + p.getSituacao();
+    public void run() {
+        while(true){
+            
+        }
     }
 
 }

@@ -1,23 +1,27 @@
 package Model;
 
+import javax.swing.JProgressBar;
+
 public class Paradas {
 
-    private int idParada, total = 0;
+    private JProgressBar progressbar = null;
     private String situacao = "L"; //L = Livre | O = ocupado
-
-    public Paradas(int idParada) {
-        this.idParada = idParada;
+    private int idParadas;
+    
+    public Paradas(int idParadas, JProgressBar progressbar) {
+        this.idParadas = idParadas;
+        this.progressbar = progressbar;
     }
 
     public Paradas() {
     }
 
-    public int getIdParada() {
-        return idParada;
+    public JProgressBar getProgressbar() {
+        return progressbar;
     }
 
-    public void setIdParada(int idParada) {
-        this.idParada = idParada;
+    public void setProgressbar(JProgressBar progressbar) {
+        this.progressbar = progressbar;
     }
 
     public String getSituacao() {
@@ -28,12 +32,13 @@ public class Paradas {
         this.situacao = situacao;
     }
 
-	public int getTotal() {
-		return total;
-	}
+    public int getIdParadas() {
+        return idParadas;
+    }
 
-	public void setTotal(int total) {
-		this.total = total;
-	}
-
+    public void setIdParadas(int idParadas) {
+        this.idParadas = idParadas;
+    }
+    
+    
 }
