@@ -2,7 +2,6 @@ package Controller;
 
 import Model.Onibus;
 import Model.Paradas;
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class OnibusRoda extends Thread {
@@ -12,9 +11,7 @@ public class OnibusRoda extends Thread {
     private Paradas paradaLivre = null, paraSituacao;
     private Thread thread;
     private Onibus onibus;
-    private Random gera = new Random();
     private int tempo;
-    private SincMetodos teste = new SincMetodos();
 
     public OnibusRoda(int idOnibus, Onibus onibus) {
         this.idOnibus = idOnibus;
@@ -45,14 +42,14 @@ public class OnibusRoda extends Thread {
                 try {
                     paradaLivre.getProgressbar().setMinimum(0);
                     paradaLivre.getProgressbar().setMaximum(tempo);
-                    paradaLivre.getProgressbar().setForeground(onibus.getCorForeground());
-                    paradaLivre.getProgressbar().setBackground(onibus.getCorBackground());
+                    paradaLivre.getProgressbar().setForeground(onibus.getCorTextoProgBar());
+                    paradaLivre.getProgressbar().setBackground(onibus.getCorProgressBar());
                     //paradaLivre.getProgressbar().setString("Onibus "+onibus.getIdOnibus()+" na parada... "+paradaLivre.getIdParadas());
                     paradaLivre.getProgressbar().setString("Onibus " + onibus.getIdOnibus() + " aguardando embarque");
 
                     for (int x = 1; x <= tempo; x++) {
                         synchronized (this) {
-                            while (SincMetodos.PAUSAR) {
+                            while (SincMetodos.paradinha) {
                                 wait();
                             }
                         }
@@ -61,7 +58,7 @@ public class OnibusRoda extends Thread {
                         thread.sleep(1);
                     }
 
-                    SincMetodos.LiberaProgress(paradaLivre);
+                    SincMetodos.ZerarBarra(paradaLivre);
 
                 } catch (Exception e) {
                 }

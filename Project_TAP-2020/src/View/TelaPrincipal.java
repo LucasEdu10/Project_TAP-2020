@@ -877,7 +877,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private int currentMinuto = 0;
     private int currentHora = 0;
     private int velocidade = 1000;
-    private int secunds = 10;
+    private int secunds = 0;
 
     /*private void tempoCorridas(){
         if(timer == null){
@@ -891,7 +891,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             public void actionPerformed(ActionEvent e) {
                 currentSegundo++;
 
-                if (currentSegundo == 10) {
+                if (currentSegundo == 60) {
                     currentMinuto++;
                     System.out.println(currentSegundo);
                     currentSegundo = 0;
@@ -912,12 +912,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         };
         this.timer = new Timer(velocidade, action);
         this.timer.start();
-        System.out.println(currentSegundo);
-        if (currentSegundo == secunds) {
+        if (jRelogio.getText().equalsIgnoreCase(/*hr+":"+*/"20" + ":" + "20") ) {
             timer.stop();
             oni.parar();
         }
     }
+
 
 
     private void BtnComeçarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnComeçarActionPerformed
