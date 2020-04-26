@@ -7,13 +7,15 @@ import java.awt.Color;
 public class SincMetodos {
 
     private Color cor = null;
+    public static final int tempoOnibus = 120000; //2 Minutos
+    public static int minuto = 0;
+    public static int segundo = 0;
+    private static int cont = 0;
     public static boolean PAUSAR = false;
     public static int controlNucleos = 0;
     public static Paradas[] listaParadas = null;
     public static OnibusRoda[] listaOnibus = null;
-    public static SituParadas[] listaSitu = null;
     private Paradas para = new Paradas();
-    private SituParadas situacao = new SituParadas();
 
     public static void criaThreadOnibus() {
         if (listaOnibus == null) {
@@ -33,7 +35,7 @@ public class SincMetodos {
     public static synchronized void LiberaProgress(Paradas parada) {
         parada.getProgressbar().setMinimum(0);
         parada.getProgressbar().setValue(0);
-        parada.getProgressbar().setString("Parada " + parada.getIdParadas() + " Disponivel");
+        parada.getProgressbar().setString("Parada " + parada.getIdParadas());
         parada.setSituacao("Livre");
         parada.getDescri().setText("Livre");
     }
@@ -58,6 +60,16 @@ public class SincMetodos {
         }
 
         return null;
+    }
+    
+    public static String completaComZero(Integer i) {  
+        String retorno = null;  
+        if( i < 10 ) {  
+            retorno = "0"+i;  
+        } else {  
+            retorno = i.toString();  
+        }  
+        return retorno;  
     }
     
 }

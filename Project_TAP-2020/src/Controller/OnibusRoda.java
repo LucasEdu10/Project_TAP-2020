@@ -10,7 +10,6 @@ public class OnibusRoda extends Thread {
     private Onibus progresso;
     private int idOnibus;
     private Paradas paradaLivre = null, paraSituacao;
-    private SituParadas paraSitu = null;
     private Thread thread;
     private Onibus onibus;
     private Random gera = new Random();
@@ -23,19 +22,26 @@ public class OnibusRoda extends Thread {
         thread = new Thread();
     }
 
+    public OnibusRoda() {
+    }
+    
+    
+    public void parar() {
+        thread.destroy();
+    }
+
     @Override
     public void run() {
         while (true) {
             paradaLivre = SincMetodos.getParadaDisponivel(paradaLivre);
-            
+
             if (paradaLivre != null) {
                 //imprime sequência de 10 números inteiros aleatórios entre 0 e 25               
-                    
+
                 tempo = ThreadLocalRandom.current().nextInt(1, 6);
                 tempo = tempo * 1000;
-                
+
                 //pegar um tempo com random de 1 a 10 e multiplicar por 10
-                
                 try {
                     paradaLivre.getProgressbar().setMinimum(0);
                     paradaLivre.getProgressbar().setMaximum(tempo);

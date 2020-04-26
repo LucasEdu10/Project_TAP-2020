@@ -1,9 +1,12 @@
 package View;
 
+import Controller.OnibusRoda;
 import Controller.SincMetodos;
-import Controller.SituParadas;
 import Model.Onibus;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import Model.Paradas;
+import javax.swing.Timer;
 
 public class TelaPrincipal extends javax.swing.JFrame {
 
@@ -139,6 +142,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         RecSituacao_35 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         RecSituacao_36 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jRelogio = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -346,6 +351,25 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jLabel38.setText("Parada 36:");
 
+        jRelogio.setText("   00:00");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jRelogio, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jRelogio, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -545,10 +569,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
                                     .addComponent(jLabel10)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(RecSituacao_8, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel6)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(RecSituacao_4, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addComponent(jProgressBar4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jProgressBar36, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jProgressBar20, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -557,21 +577,33 @@ public class TelaPrincipal extends javax.swing.JFrame {
                                 .addComponent(jProgressBar24, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jProgressBar16, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jProgressBar12, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jProgressBar8, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(jProgressBar8, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel6)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(RecSituacao_4, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                 .addGap(0, 40, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel1)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(LabelNomeThread)
-                            .addGap(12, 12, 12)))
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel1)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(LabelNomeThread)
+                                    .addGap(12, 12, 12)))
+                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(71, 71, 71)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel3)
@@ -840,10 +872,59 @@ public class TelaPrincipal extends javax.swing.JFrame {
         }
     }
 
+    private static Timer timer;
+    private int currentSegundo;
+    private int currentMinuto = 0;
+    private int currentHora = 0;
+    private int velocidade = 1000;
+    private int secunds = 10;
+
+    /*private void tempoCorridas(){
+        if(timer == null){
+            jRelogio.setText(SincMetodos.completaComZero(SincMetodos.minuto)+":"+SincMetodos.completaComZero(SincMetodos.segundo));
+            
+        }
+    }*/
+    private void iniciarContagem() {
+        OnibusRoda oni = new OnibusRoda();
+        ActionListener action = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                currentSegundo++;
+
+                if (currentSegundo == 10) {
+                    currentMinuto++;
+                    System.out.println(currentSegundo);
+                    currentSegundo = 0;
+                }
+
+                if (currentMinuto == 60) {
+                    currentHora++;
+                    currentMinuto = 0;
+                }
+
+                //String hr = currentHora <= 9? "0"+currentHora:currentHora+"";
+                String min = currentMinuto <= 9 ? "0" + currentMinuto : currentMinuto + "";
+                String seg = currentSegundo <= 9 ? "0" + currentSegundo : currentSegundo + "";
+
+                jRelogio.setText(/*hr+":"+*/min + ":" + seg);
+
+            }
+        };
+        this.timer = new Timer(velocidade, action);
+        this.timer.start();
+        System.out.println(currentSegundo);
+        if (currentSegundo == secunds) {
+            timer.stop();
+            oni.parar();
+        }
+    }
+
 
     private void BtnComeçarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnComeçarActionPerformed
         SincMetodos.controlNucleos = Runtime.getRuntime().availableProcessors();
 
+        iniciarContagem();
+        //tempoCorridas();
         carregaListaParadas();
         SincMetodos.criaThreadOnibus();
     }//GEN-LAST:event_BtnComeçarActionPerformed
@@ -973,6 +1054,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JProgressBar jProgressBar10;
     private javax.swing.JProgressBar jProgressBar11;
@@ -1009,6 +1091,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JProgressBar jProgressBar7;
     private javax.swing.JProgressBar jProgressBar8;
     private javax.swing.JProgressBar jProgressBar9;
+    private javax.swing.JLabel jRelogio;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
