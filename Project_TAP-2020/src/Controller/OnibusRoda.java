@@ -12,6 +12,8 @@ public class OnibusRoda extends Thread {
     private Thread thread;
     private Onibus onibus;
     private int tempo;
+    private boolean acabou = true;
+    SincMetodos pausar = new SincMetodos();
 
     public OnibusRoda(int idOnibus, Onibus onibus) {
         this.idOnibus = idOnibus;
@@ -23,8 +25,10 @@ public class OnibusRoda extends Thread {
     }
     
     
-    public void parar() {
-        thread.destroy();
+    public void parar()/* throws InterruptedException*/ {
+        
+        pausar.pararThread();
+        
     }
 
     @Override
@@ -59,6 +63,7 @@ public class OnibusRoda extends Thread {
                     }
 
                     SincMetodos.ZerarBarra(paradaLivre);
+                    pausar.liberaPausa();
 
                 } catch (Exception e) {
                 }

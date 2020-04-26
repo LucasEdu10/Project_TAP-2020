@@ -3,6 +3,8 @@ package Controller;
 import Model.Onibus;
 import Model.Paradas;
 import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class SincMetodos {
 
@@ -61,7 +63,22 @@ public class SincMetodos {
 
         return null;
     }
+
+    public synchronized void pararThread() {
+        OnibusRoda buss = new OnibusRoda();
+        Thread thread = new Thread();
+        try {
+            notifyAll();
+            wait();
+            //thread.stop();
+            //stop();
+        } catch (InterruptedException ex) {
+            Logger.getLogger(SincMetodos.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     
-    
-    
+    public synchronized void liberaPausa() {
+        notify();
+    }
+
 }
