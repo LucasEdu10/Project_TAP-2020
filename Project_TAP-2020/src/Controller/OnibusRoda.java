@@ -42,7 +42,7 @@ public class OnibusRoda extends Thread {
                     paradaLivre.getProgressbar().setForeground(onibus.getCorForeground());
                     paradaLivre.getProgressbar().setBackground(onibus.getCorBackground());
                     //paradaLivre.getProgressbar().setString("Onibus "+onibus.getIdOnibus()+" na parada... "+paradaLivre.getIdParadas());
-                    paradaLivre.getProgressbar().setString("Parada " + paradaLivre.getIdParadas() + " está " +paradaLivre.getSituacao() + " Onibus " + onibus.getIdOnibus() + " está aguardando embarque");
+                    paradaLivre.getProgressbar().setString("Onibus " + onibus.getIdOnibus() + " aguardando embarque");
 
                     for (int x = 1; x <= tempo; x++) {
                         synchronized (this) {
