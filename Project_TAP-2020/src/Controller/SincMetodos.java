@@ -11,7 +11,7 @@ public class SincMetodos {
     public static int minuto = 0;
     public static int segundo = 0;
     private static int cont = 0;
-    public static boolean PAUSAR = false;
+    public static boolean paradinha = false;
     public static int controlNucleos = 0;
     public static Paradas[] listaParadas = null;
     public static OnibusRoda[] listaOnibus = null;
@@ -32,7 +32,7 @@ public class SincMetodos {
 
     }
 
-    public static synchronized void LiberaProgress(Paradas parada) {
+    public static synchronized void ZerarBarra(Paradas parada) {
         parada.getProgressbar().setMinimum(0);
         parada.getProgressbar().setValue(0);
         parada.getProgressbar().setString("Parada " + parada.getIdParadas());
@@ -62,14 +62,6 @@ public class SincMetodos {
         return null;
     }
     
-    public static String completaComZero(Integer i) {  
-        String retorno = null;  
-        if( i < 10 ) {  
-            retorno = "0"+i;  
-        } else {  
-            retorno = i.toString();  
-        }  
-        return retorno;  
-    }
+    
     
 }
