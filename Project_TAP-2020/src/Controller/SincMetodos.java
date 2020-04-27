@@ -18,12 +18,15 @@ public class SincMetodos {
     public static Paradas[] listaParadas = null;
     public static OnibusRoda[] listaOnibus = null;
     private Paradas para = new Paradas();
+    public static int totalOnibus;
+    public static int totalParadas;
 
     public static void criaThreadOnibus() {
         if (listaOnibus == null) {
             listaOnibus = new OnibusRoda[SincMetodos.controlNucleos]; //determinado a quantidade de onibus
 
             for (int i = 0; i < SincMetodos.controlNucleos; i++) {
+                totalOnibus++;
                 listaOnibus[i] = new OnibusRoda(i, new Onibus(i));
             }
 
@@ -39,6 +42,7 @@ public class SincMetodos {
         parada.getProgressbar().setValue(0);
         parada.getProgressbar().setString("Parada " + parada.getIdParadas());
         parada.setSituacao("Livre");
+        totalParadas++;
         parada.getDescri().setText("Livre");
     }
 
@@ -46,14 +50,14 @@ public class SincMetodos {
         for (int i = 0; i < listaParadas.length; i++) {
             if (parada == null) {
                 if (listaParadas[i].getSituacao().equals("Livre")) {
-                    listaParadas[i].getDescri().setText("Ocupado");
+                    listaParadas[i].getDescri().setText("Ocupada");
                     listaParadas[i].setSituacao("Ocupada");
                     return listaParadas[i];
                 }
             } else if (parada.getIdParadas() <= i) {
                 if (listaParadas[i].getSituacao().equals("Livre")) {
                     listaParadas[i].setSituacao("Ocupada");
-                    listaParadas[i].getDescri().setText("Ocupado");
+                    listaParadas[i].getDescri().setText("Ocupada");
                     parada.setSituacao("Livre");
                     parada.getDescri().setText("Livre");
                     return listaParadas[i];
@@ -79,6 +83,12 @@ public class SincMetodos {
     
     public synchronized void liberaPausa() {
         notify();
+    }
+    
+    public static void paraPrograma(){
+        if(listaOnibus == listaOnibus){
+            listaOnibus = null;
+        }
     }
 
 }

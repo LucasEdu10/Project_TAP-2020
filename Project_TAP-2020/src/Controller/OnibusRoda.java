@@ -25,9 +25,9 @@ public class OnibusRoda extends Thread {
     }
     
     
-    public void parar()/* throws InterruptedException*/ {
+    public void parar()throws InterruptedException{
         
-        pausar.pararThread();
+        thread.sleep(10000);
         
     }
 
