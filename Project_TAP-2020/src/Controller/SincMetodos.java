@@ -9,15 +9,10 @@ import java.util.logging.Logger;
 public class SincMetodos {
 
     private Color cor = null;
-    public static final int tempoOnibus = 120000; //2 Minutos
-    public static int minuto = 0;
-    public static int segundo = 0;
-    private static int cont = 0;
     public static boolean paradinha = false;
     public static int controlNucleos = 0;
     public static Paradas[] listaParadas = null;
     public static OnibusRoda[] listaOnibus = null;
-    private Paradas para = new Paradas();
     public static int totalOnibus;
     public static int totalParadas;
 
@@ -29,12 +24,10 @@ public class SincMetodos {
                 totalOnibus++;
                 listaOnibus[i] = new OnibusRoda(i, new Onibus(i));
             }
-
             for (Thread ListaThread1 : SincMetodos.listaOnibus) {
                 ListaThread1.start();
             }
         }
-
     }
 
     public static synchronized void ZerarBarra(Paradas parada) {
@@ -64,31 +57,6 @@ public class SincMetodos {
                 }
             }
         }
-
         return null;
     }
-
-    public synchronized void pararThread() {
-        OnibusRoda buss = new OnibusRoda();
-        Thread thread = new Thread();
-        try {
-            notifyAll();
-            wait();
-            //thread.stop();
-            //stop();
-        } catch (InterruptedException ex) {
-            Logger.getLogger(SincMetodos.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-    
-    public synchronized void liberaPausa() {
-        notify();
-    }
-    
-    public static void paraPrograma(){
-        if(listaOnibus == listaOnibus){
-            listaOnibus = null;
-        }
-    }
-
 }

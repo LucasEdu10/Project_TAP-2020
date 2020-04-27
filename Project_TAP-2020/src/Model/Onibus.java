@@ -5,14 +5,12 @@ import java.util.Random;
 
 public class Onibus {
 
-    private int idOnibus, prioridade;
+    private int idOnibus;
     private Color corProgressBar = null;
     private Color corTextoProgBar = null;
     private Color cor;
-    private Paradas situacao;
-    private int contaParada;
 
-   
+  
 
     Random gera = new Random();
 
@@ -24,13 +22,6 @@ public class Onibus {
     public Onibus() {
     }
     
-    public int getContaParada() {
-        return contaParada;
-    }
-
-    public void setContaParada(int contaParada) {
-        this.contaParada = contaParada;
-    }
     public void setCor(Color cor) {
         this.cor = cor;
     }
