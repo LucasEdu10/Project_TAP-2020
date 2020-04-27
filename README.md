@@ -3,7 +3,7 @@ Repositório criado para a cadeira de TAP (Técnicas avançadas de programação
 
 # Tema do Projeto: Programa de Onibus
   - O CittaPobre, como foi carinhosamente apelidado pelo grupo faz uso de Thread's em Java, aonde cada Thread é percorrida na ProgressBar e cada onibus alimenta a ProgressBar, a ProgressBar seria as paradas. Cada ProgressBar mostra qual onibus está nela e logo em cima de cada parada tem o seu status.
-  - O projeto contém um relogio, aonde definimos um tempo para o programa rodar. Que o tempo foi de um minuto, chegando ao tempo determinado ele zera as paradas e gera um relatorio.
+  - O projeto contém um relogio, aonde definimos um tempo para o programa rodar. O tempo foi de um minuto, chegando ao tempo determinado ele zera as paradas e gera um relatorio.
   
 Segue imagens do projeto:
 
