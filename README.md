@@ -7,3 +7,5 @@ Repositório criado para a cadeira de TAP (Técnicas avançadas de programação
 Segue imagens do projeto:
 
   - Tela inicial:
+
+![CittaPobre.jpeg](Project_TAP-2020/imagens/CittaPobre.jpeg)
