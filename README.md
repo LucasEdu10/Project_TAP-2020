@@ -9,3 +9,11 @@ Segue imagens do projeto:
   - Tela inicial:
 
 ![CittaPobre.jpeg](/imagens/CittaPobre.jpeg)
+
+  - Tela quando o programa está rodando:
+
+![CittaPobre-2.jpeg](/imagens/CittaPobre-2.jpeg)
+
+  - Tela quando o programa é finalizado:
+
+![CittaPobre-3.jpeg](/imagens/CittaPobre-3.jpeg)
