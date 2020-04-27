@@ -8,4 +8,4 @@ Segue imagens do projeto:
 
   - Tela inicial:
 
-![CittaPobre.jpeg](Project_TAP-2020/imagens/CittaPobre.jpeg)
+![CittaPobre.jpeg](/imagens/CittaPobre.jpeg)
